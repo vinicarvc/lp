@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "MontSerrat";
+}
+
+:root {
+  --green: #375b2e;
+  --light-green: #7bc26a;
+  --grey: #676767;
+  --light-sand: #dbdbda;
+}
+
+body {
+  background-color: #070000;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  font-weight: 500;
+}
+
+.header-links {
+  display: flex;
+  gap: 6rem;
+}
+
+.header-links a {
+  color: white;
+}
+
+.header-links a:hover {
+  color: var(--light-green);
+}
+
+.header img {
+  width: 150px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+
+.left-main {
+  width: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-main h1 {
+  margin-top: 6rem;
+  text-transform: uppercase;
+  color: var(--green);
+}
+
+.left-main p {
+  margin: 10px;
+  font-weight: 400;
+  color: white;
+}
+
+.course {
+  margin-top: 6rem;
+  text-align: center;
+  background-color: var(--light-sand);
+  padding: 6rem;
+}
+
+.course h1 {
+  color: var(--green);
+}
+
+.course p {
+  color: black;
+}
+
+.container {
+  display: flex;
+  margin: 4rem;
+}
+
+.box {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.box p {
+  margin-top: 10px;
+}
+
+.price {
+  text-align: center;
+  padding: 4rem;
+}
+
+.price h1 {
+  color: var(--green);
+}
+
+.price p {
+  color: white;
+}
+
+.price-container {
+  display: flex;
+}
+
+.price-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  width: 45vh;
+  margin: 10px auto;
+  border-radius: 15px;
+  background-color: var(--light-sand);
+}
+
+.price-box h2 {
+  color: black;
+}
+
+.price-text {
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--green);
+}
+
+.price-text2 {
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.contact {
+  background-color: var(--light-sand);
+  padding: 4rem;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+
+.contact h1 {
+  color: var(--green);
+  text-align: center;
+}
+
+.contact-right {
+  text-align: center;
+  padding: 4rem;
+}
+
+.contact-right h1 {
+  font-size: 50px;
+}
+
+.contact-right p {
+  font-size: 20px;
+}
+
+/*icons*/
+
+.fa-graduation-cap,
+.fa-laptop,
+.fa-paste {
+  font-size: 4rem;
+  color: var(--green);
+}
+
+/*buttons*/
+
+.button {
+  background-color: var(--green);
+  padding: 10px;
+  width: 40%;
+  margin: 20px auto;
+  border-radius: 20px;
+  color: white;
+}
+
+.button2 {
+  background-color: var(--green);
+  padding: 10px;
+  width: 20%;
+  margin: 20px auto;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+}
+
+.button-div {
+  margin: 0 auto;
+  display: flex;
+}
+
+.button3 {
+  background-color: var(--green);
+  padding: 10px;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+.button-div2 {
+  margin: 0 auto;
+  display: flex;
+}
+
+.button:hover {
+  background-color: var(--light-green);
+}
+
+.button2:hover {
+  background-color: var(--light-green);
+}
+
+.button3:hover {
+  background-color: var(--light-green);
+}
+
+/*span*/
+
+.span-green {
+  color: var(--light-green);
+  font-weight: 600;
+}
+
+.span-green {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.span-bold {
+  font-weight: bold;
+}
+
+.span-price {
+  font-size: 90px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*responsive*/
+
+@media (max-width: 1000px) {
+  .main {
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .header-links {
+    gap: 4rem;
+  }
+
+  .course {
+    padding: 2rem;
+  }
+
+  .course h1 {
+    padding: 20px;
+  }
+
+  .box {
+    padding: 0;
+  }
+
+  .left-main {
+    width: 100%;
+  }
+
+  .left-main h1 {
+    margin-top: 3rem;
+  }
+  .contact {
+    flex-wrap: wrap;
+  }
+  .container {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .contact-right {
+    padding: 0;
+  }
+
+  .button2 {
+    width: 50%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
