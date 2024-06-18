@@ -22,14 +22,14 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   padding: 30px;
   font-weight: 500;
 }
 
 .header-links {
   display: flex;
-  gap: 6rem;
+  gap: 3em;
 }
 
 .header-links a {
@@ -69,6 +69,12 @@ body {
   color: white;
 }
 
+.right-main img {
+  width: 600px;
+  height: 400px;
+  border-radius: 40px;
+}
+
 .course {
   margin-top: 6rem;
   text-align: center;
@@ -78,10 +84,31 @@ body {
 
 .course h1 {
   color: var(--green);
+  margin-bottom: 20px;
 }
 
 .course p {
   color: black;
+}
+
+.course2 {
+  margin-top: 3dvb;
+  text-align: center;
+  background-color: var(--purple);
+  padding: 3rem;
+}
+
+.course2 h1 {
+  padding: 2rem;
+  color: var(--green);
+}
+
+.course2 p {
+  color: white;
+}
+
+.course2-text2 {
+  margin-top: 3rem;
 }
 
 .container {
@@ -100,6 +127,10 @@ body {
   margin-top: 10px;
 }
 
+.price-main {
+  background-color: var(--light-sand);
+}
+
 .price {
   text-align: center;
   padding: 4rem;
@@ -110,7 +141,7 @@ body {
 }
 
 .price p {
-  color: white;
+  color: black;
 }
 
 .price-container {
@@ -126,11 +157,11 @@ body {
   width: 45vh;
   margin: 10px auto;
   border-radius: 15px;
-  background-color: var(--light-sand);
+  background-color: var(--purple);
 }
 
 .price-box h2 {
-  color: var(--purple);
+  color: var(--green);
   font-weight: bold;
 }
 
@@ -141,7 +172,7 @@ body {
 }
 
 .price-text2 {
-  color: black;
+  color: white;
   font-weight: 400;
   font-size: 15px;
 }
@@ -172,6 +203,133 @@ body {
   font-size: 20px;
 }
 
+/*form*/
+.form-subscribe {
+  background-color: var(--blue);
+  padding: 23px;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  margin: 5px auto;
+  width: 60%;
+}
+
+.form-subscribe h1 {
+  color: var(--green);
+  text-transform: uppercase;
+}
+
+.form-subscribe p {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.requirements {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info-matriz2 {
+  background-color: var(--purple);
+  padding: 23px;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
+.info-matriz2 > div:nth-child(1) {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+}
+
+.info-matriz2 > div:nth-child(2) {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input {
+  background-color: var(--purple);
+  border: 1px solid #fff;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+input:focus {
+  border: 3px solid var(--green);
+}
+
+#name::placeholder {
+  color: #fff;
+}
+
+#document::placeholder {
+  color: #fff;
+}
+
+#your_email::placeholder {
+  color: #fff;
+}
+
+#mobile::placeholder {
+  color: #fff;
+}
+
+#nacionality::placeholder {
+  color: #fff;
+}
+
+#password::placeholder {
+  color: #fff;
+}
+
+#confirm_password::placeholder {
+  color: #fff;
+}
+
+#birthdate::placeholder {
+  color: #fff;
+}
+
+option {
+  background-color: var(--light-sand);
+  color: var(--purple);
+  font-weight: 700;
+}
+
+form select {
+  background-color: var(--purple);
+  border: 1px solid #fff;
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.register {
+  margin: 20px auto;
+  width: 50%;
+  border: none;
+  background-color: var(--green);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.register:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
+  background-color: var(--light-green);
+}
+
 /*icons*/
 
 .fa-graduation-cap,
@@ -186,7 +344,7 @@ body {
 .button {
   background-color: var(--green);
   padding: 10px;
-  width: 40%;
+  width: 50%;
   margin: 20px auto;
   border-radius: 20px;
   color: var(--purple);
@@ -287,6 +445,18 @@ a {
     padding: 20px;
   }
 
+  .course2 {
+    padding: 2rem;
+  }
+
+  .course2 h1 {
+    padding: 20px;
+  }
+
+  .course2-text2 {
+    margin: 3rem;
+  }
+
   .box {
     padding: 0;
   }
@@ -297,6 +467,11 @@ a {
 
   .left-main h1 {
     margin-top: 3rem;
+  }
+
+  .right-main img {
+    width: 100%;
+    height: 100%;
   }
   .contact {
     flex-wrap: wrap;
@@ -316,5 +491,9 @@ a {
 
   img {
     width: 100%;
+  }
+
+  .form-subscribe {
+    width: 80%;
   }
 }

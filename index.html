@@ -12,39 +12,36 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="header">
-      <img src="image.png" />
+    <div class="header" id="home">
       <div class="header-links">
-        <a href="#">ínicio</a>
-        <a href="#">Sobre</a>
-        <a href="#">Inscreva-se</a>
+        <a href="#home">ínicio</a>
+        <a href="#more">Sobre</a>
+        <a href="#subscribe">Inscreva-se</a>
       </div>
     </div>
     <div class="main">
       <div class="left-main">
-        <h1>Lorem ipsum dolor sit amet</h1>
+        <h1>Técnico em Transações Imobiliárias</h1>
         <p>
-          Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
-          dolor sit amet Lorem ipsum dolor sit amet<span class="span-green">
-            Lorem ipsum dolor sit amet</span
+          Você que tem experiência na área imobiliária,<span class="span-green">
+            agora é a hora de se profissionalizar!</span
           >
-          Lorem ipsum dolor sit amet
         </p>
-        <a class="button" href="#">Lorem ipsum dolor sit amet</a>
+        <p></p>
+        <a class="button" href="#more">CONHEÇA A CERTIFICAÇÃO POR COMPETÊCIA</a>
       </div>
       <div class="right-main">
-        <img src="image.png" />
+        <img src="imob1.jpg" />
       </div>
     </div>
-    <div class="course">
+    <div class="course" id="more">
       <div>
-        <h1>Lorem ipsum dolor sit amet</h1>
+        <h1>CONHEÇA A CERTIFICAÇÃO POR COMPETÊCIA</h1>
         <p>
-          Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
-          dolor sit amet Lorem ipsum dolor sit amet<span class="span-green2">
-            Lorem ipsum dolor sit amet</span
-          >
-          Lorem ipsum dolor sit amet
+          Trata-se de um processo de AFERIÇÃO TÉCNICA que visa reconhecer as
+          habilidades práticas valorizando sua experiência profissional,
+          possibilitando a obtenção de um Diploma de Curso Técnico e registro no
+          Conselho Profissional
         </p>
       </div>
       <div class="container">
@@ -75,6 +72,28 @@
       </div>
     </div>
 
+    <div class="course2">
+      <div>
+        <h1>O QUE É O PROCESSO DE CERTIFICAÇÃO TÉCNICA POR COMPETÊNCIA?</h1>
+        <p>
+          Este processo está dentro das leis educacionais e nossa instituição
+          tem a autorização para emitir a CERTIFICAÇÃO POR COMPETÊNCIA de acordo
+          com a RESOLUÇÃO Nº 66 DE 8 DE FEVEREIRO DE 2024 Processo nº
+          2023/672621 – CEE/PA e Parecer nº 066/2024 – CEE/PA
+        </p>
+      </div>
+      <div class="course2-text2">
+        <h1>CERTIFICAÇÃO AUTORIZADA </h1>
+        <p>
+          Autorização pelo Conselho Estadual de Educação para emitir o Certificado do Curso Tec. em Transações Imobiliárias, considerando a experiência do aluno.  Certificado válido em todo território nacional. Com esse Certificado de Técnico em Transações Imobiliárias o profissional estará apto a se filiar ao COFECI e tirar sua carteira de Corretor de Imóveis.
+        </p>
+      </div>
+      <div class="button-div">
+        <a class="button2" href="#">CLIQUE AQUI E VEJA AS AUTORIZAÇÕES</a>
+      </div>
+    </div>
+
+
     <div class="price-main">
       <div class="price">
         <div>
@@ -90,21 +109,207 @@
         </div>
       </div>
       <div class="button-div">
-        <a class="button2" href="#">Lorem ipsum dolor sit amet</a>
+        <a class="button2" href="#">QUERO ME MATRICULAR</a>
       </div>
     </div>
 
-    <div class="contact">
-      <div class="contact-left">
-        <img src="image.png" />
-      </div>
-      <div class="contact-right">
-        <h1>Ainda tem dúvidas?</h1>
-        <p>Clique aqui para falar diretamente conosco</p>
-        <div class="button-div2">
-          <a class="button3" href="#">Quero receber informações via WhatsApp</a>
+
+
+    <div class="form-subscribe" id="subscribe">
+        <h1>Faça sua inscrição</h1>
+        <div class="requirements">
+        <p><span class="span-green">Requisitos minímos:</span>
+       <p>Ensino Médio completo;</p>
+         <p>Ter mais de 18 anos de idade;</p>
+          <p>Ter 01 (um) ano ou mais de experiência comprovada na área de Gestão de Imóveis.</p>
+          </p>
         </div>
       </div>
+      <form class="form-subscribe" id="form" action="/registry" method="post">
+        <input type="text" id="name" name="name" placeholder="Nome Completo" />
+        <input
+          type="text"
+          name="document"
+          id="document"
+          class="input-text"
+          placeholder="CPF (apenas números)"
+          pattern="\d*"
+          maxlength="11"
+          title="digite apenas números"
+          onblur="cpfValidator()"
+          required
+        />
+        <input
+          type="text"
+          name="birthdate"
+          id="birthdate"
+          class="input-text"
+          placeholder=" Data de Nascimento"
+          pattern="\d{2}\/\d{2}\/\d{4}"
+          title="Digite a data no formato dd/mm/aaaa"
+          onkeyup="dateMask()"
+          maxlength="10"
+          required
+        />
+        <input
+          type="text"
+          name="your_email"
+          id="your_email"
+          class="input-text"
+          pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}"
+          placeholder="Seu melhor e-mail"
+          title="Por favor, insira um e-mail válido"
+          required
+        />
+        <input
+          type="text"
+          name="mobile"
+          id="mobile"
+          class="input-text"
+          pattern="\(\d{2}\)\d{5}\-\d{4}"
+          placeholder="Celular"
+          title="Digite o celular no formato (XX)XXXXX-XXXX"
+          onkeyup="celMask()"
+          maxlength="14"
+          required
+        />
+        <select
+          class="input-text"
+          name="nacionality"
+          id="nacionality"
+          onChange="isForeign()"
+          required
+        >
+          <option value="" disabled selected="selected">Nacionalidade</option>
+          <option value="Brasileiro">Brasileiro</option>
+          <option value="Estrangeiro">Estrangeiro</option>
+        </select>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="input-text"
+          placeholder="Senha"
+          onChange="onChange()"
+          required
+        />
+        <input
+          type="password"
+          name="confirm_password"
+          id="confirm_password"
+          class="input-text"
+          placeholder="Confirme sua senha"
+          onChange="onChange()"
+          required
+        />
+        </div>
+        <input
+          type="submit"
+          name="register"
+          class="register"
+          value="Inscrever"
+          action="/registry"
+          method="post"
+        />
+      </form>
     </div>
   </body>
+  <script>
+    function onChange() {
+      const password = document.querySelector('input[name=password]');
+      const confirm = document.querySelector('input[name=confirm_password]');
+      if (confirm.value === password.value) {
+        confirm.setCustomValidity('');
+      } else {
+        confirm.setCustomValidity('As senhas precisam ser iguais');
+      }
+  
+    }
+    function cpfValidator() {
+      if (isForeign()) {
+        cpfInput.setCustomValidity('');
+        return
+      }
+      const cpfInput = document.querySelector('input[name=document]');
+      const cpf = cpfInput.value;
+      function isValidCpf(cpf) {
+        cpf = cpf.replace(/\D/g, '');
+        if (cpf.toString().length != 11 || /^(\d)\1{10}$/.test(cpf)) return false;
+        var result = true;
+        [9, 10].forEach(function (j) {
+          var soma = 0, r;
+          cpf.split(/(?=)/).splice(0, j).forEach(function (e, i) {
+            soma += parseInt(e) * ((j + 2) - (i + 1));
+          });
+          r = soma % 11;
+          r = (r < 2) ? 0 : 11 - r;
+          if (r != cpf.substring(j, j + 1)) result = false;
+        });
+        return result;
+      }
+      if (isValidCpf(cpf)) {
+        cpfInput.setCustomValidity('');
+      } else {
+        cpfInput.setCustomValidity('Insira um cpf válido');
+      }
+    }
+    function isForeign() {
+      const nacionalityInput = document.querySelector('select[name=nacionality]');
+      if (nacionalityInput.value == "Estrangeiro") {
+        const cpfInput = document.querySelector('input[name=document]');
+        cpfInput.setCustomValidity('');
+        return true;
+      } else {
+        return false;
+      }
+    }
+    function dateMask() {
+      const dateInput = document.querySelector('input[name=birthdate]');
+      var date = dateInput.value;
+      if (window.event.keyCode == 8) { // ignore backspace
+      } else if (date.match(/^\d{2}$/) !== null) {
+        dateInput.value = date + '/';
+      } else if (date.match(/^\d{2}\/\d{2}$/) !== null) {
+        dateInput.value = date + '/';
+      }
+    }
+    function celMask() {
+      const mobileInput = document.querySelector('input[name=mobile]');
+      var mobile = mobileInput.value;
+      if (window.event.keyCode == 8) { // ignore backspace
+      } else if (mobile.match(/^\d{1}$/) !== null) {
+        mobileInput.value = '(' + mobile;
+      } else if (mobile.match(/^\(\d{2}$/) !== null) {
+        mobileInput.value = mobile + ')';
+      } else if (mobile.match(/^\(\d{2}\)\d{5}$/) !== null) {
+        mobileInput.value = mobile + '-';
+      }
+    }
+  
+  
+    const makeCollapsable = (itemName) => {
+      var coll = document.getElementsByClassName(itemName);
+      var i;
+  
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          console.log(content)
+          if (content.style.display === "block") {
+            content.style.display = "none";
+  
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    }
+    makeCollapsable("info-matriz-pdf");
+    makeCollapsable("info-matriz-pdf-desk");
+  
+  </script>
+
+
+
 </html>
