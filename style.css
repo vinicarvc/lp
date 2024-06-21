@@ -95,7 +95,7 @@ body {
   margin-top: 3dvb;
   text-align: center;
   background-color: var(--purple);
-  padding: 3rem;
+  padding: 10rem;
 }
 
 .course2 h1 {
@@ -105,6 +105,22 @@ body {
 
 .course2 p {
   color: white;
+}
+
+.course2-text2 {
+  margin-top: 3dvb;
+  text-align: center;
+  background-color: var(--light-sand);
+  padding: 10rem;
+}
+
+.course2-text2 h1 {
+  padding: 2rem;
+  color: var(--green);
+}
+
+.course2-text2 p {
+  color: black;
 }
 
 .course2-text2 {
@@ -363,7 +379,7 @@ form select {
 }
 
 .button-div {
-  margin: 0 auto;
+  margin: 10px auto;
   display: flex;
 }
 
@@ -454,7 +470,7 @@ a {
   }
 
   .course2-text2 {
-    margin: 3rem;
+    padding: 1rem;
   }
 
   .box {
@@ -487,6 +503,10 @@ a {
 
   .button2 {
     width: 50%;
+  }
+
+  .button-div {
+    flex-wrap: wrap;
   }
 
   img {
